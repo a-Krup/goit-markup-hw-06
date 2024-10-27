@@ -23,33 +23,38 @@
                     Web<span class="span-logo">Studio</span>
                 </a>
                 <ul class="item-menu">
-                    <li><a class="menu retreat active menu-one" href="./index.html">Studio</a></li>
-                    <li><a class="menu retreat" href="">Portfolio</a></li>
-                    <li><a class="menu retreat" href="">Contacts</a></li>
+                    <li><a class="menu active menu-one" href="./index.html">Studio</a></li>
+                    <li><a class="menu" href="">Portfolio</a></li>
+                    <li><a class="menu" href="">Contacts</a></li>
                 </ul>
             </nav>
             <address>
-                <ul class="item-menu">
+                <ul class="contakt-menu">
                     <li>
-                        <a class="contakt retreat" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class="contakt" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li>
-                        <a class="contakt retreat" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class="contakt" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
+            <button class="burg-btn" type="button">
+                <svg class="burg-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-group"></use>
+                </svg>
+            </button>
         </div>
 
     </header>
     <main>
-        <section class="section main-color">
+        <section class="section main-color hidden">
             <div class="container">
                 <h1 class="main-name">Effective Solutions for Your Business</h1>
                 <button class="btn-main" type="button">Order Service</button>
             </div>
         </section>
 
-        <section class="section">
+        <section class="section hidden">
             <div class="container">
                 <h2 class="main-two visually-hidden ">Our Features</h2>
                 <ul class="feat">
@@ -97,7 +102,7 @@
             </div>
         </section>
 
-        <section class="section team ">
+        <section class="section team hidden ">
             <div class="container">
                 <h2 class="main-two">Our Team</h2>
                 <ul class="cards">
@@ -258,7 +263,7 @@
         </section>
         
 
-        <section class="section">
+        <section class="section hidden">
             <div class="container">
                 <h2 class="main-two">Our Portfolio</h2>
 
@@ -363,7 +368,7 @@
 
         </section>
     </main>
-    <footer class="name-ftr">
+    <footer class="name-ftr hidden">
         <div class="container retreat ftr-logo">
             <div class="logo-ftr">
             <a class="pos-ftr" href="./index.html">
@@ -428,7 +433,7 @@
             </div>
             </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-open hidden">
         <div class="modal">
             <button type="button" class="close-button">
                 <svg class="close-icon" width="8" height="8">
