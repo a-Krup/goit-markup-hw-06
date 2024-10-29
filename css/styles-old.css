@@ -55,55 +55,21 @@
     background-color: #404bbf;
 }
    
-    
+  
 
 
-.name-two {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin: 0;  
-    margin-bottom: 8px;
-      
+    color: #434455;
+    margin: 0;
+    
 }
 
-.vkr {
-  display: flex;
-  align-items: center; 
-  justify-content: center;
-  width: 264px;
-  height: 112px;
-  position: relative;
-  background-color: #f4f4fd; 
-  border-radius: 4px; 
-  border: 1px solid #8e8f99; 
-  margin-bottom: 8px; 
-}
-
-.vkr-icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cntr {
-   text-align: center; 
-}
-
-
-.feat {
-   display: flex;
-   flex-direction: row;
-   gap: 24px;
-}
-
-.feat-item {
-  width: calc((100% - 72px) / 4);
-  text-align: left; 
-}
 
 
 p {
