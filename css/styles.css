@@ -20,46 +20,9 @@ ul {
     padding-left: 0;
     }
 
- .main-name{
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: #fff;
-    margin: 0;
-    margin-bottom: 48px;
-    max-width: 496px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-               
-}   
+ 
 
- .main-two {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11; 
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    text-transform: capitalize;
-    margin: 0;
-    margin-bottom: 72px;
-    text-align: center;
-   
-    
-}
-
-.name-two {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    margin: 0;  
-    margin-bottom: 8px;
-      
-}
-
+ 
  p {
     font-weight: 400;
     font-size: 16px;
@@ -75,19 +38,6 @@ img {
   width: 100%;
   height: auto;
      
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .container {
@@ -109,6 +59,21 @@ img {
     padding: 0 15px;
 }
 }
+
+.section {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  
+}
+
+@media screen and (min-width:1158px) {
+    .section {
+     padding-top: 120px;
+     padding-bottom: 120px;
+  
+}
+}
+
 
 .one {
     border-bottom: 1px solid #e7e9fc;
@@ -475,4 +440,133 @@ display: flex;
      display: none;
 
 }
+}
+/*section main*/
+.main-color-mob {
+   /*width: 320px;*/
+   margin: 0 auto; 
+   background: rgba(46, 47, 66, 0.7);
+   background-image: 
+      linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/office.jpg);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;    
+}
+
+.main-name{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 72px;
+    padding-top: 72px; 
+    padding-bottom: 72px;
+    max-width: 216px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+               
+}
+
+.btn-main {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background-color: #4d5ae5; 
+    cursor: pointer;
+    border: none; 
+    border-radius: 4px;
+    padding: 16px 32px;
+    min-width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    /*margin-bottom: 185px;*/
+    display: block;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+ }
+
+.btn-main:hover,
+.btn-main:focus{
+    background-color: #404bbf;
+}
+   
+
+@media screen and (min-width: 756px) {
+    .main-color-mob {
+        /*width: 768px;*/
+        background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office@2x.jpg);
+}
+     .main-name {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+        padding-top: 112px; 
+        padding-bottom: 112px;
+     }
+
+}
+
+@media screen and (min-width: 1158px) {
+    .main-color-mob {
+     padding-top: 188px; 
+     padding-bottom: 188px;
+     /*width: 1440px;*/
+     
+}
+}
+
+/*section 2*/
+
+.main-two {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11; 
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 72px;
+    text-align: center;
+   
+    
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.name-two {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0;  
+    margin-bottom: 8px;
+      
 }
