@@ -38,7 +38,7 @@
                     </li>
                 </ul>
             </address>
-            <button class="burg-btn" type="button">
+            <button data-menu-open class="burg-btn" type="button">
                 <svg class="burg-icon" width="24" height="24">
                     <use href="./images/icons.svg#icon-group"></use>
                 </svg>
@@ -46,9 +46,9 @@
         </div>
         </header>
 
-        <div class="menu-mobal is-open">
+        <div data-menu class="menu-mobal is-open">
         <div class="container menu-mob-container">
-        <button type="button" class="close-button">
+        <button data-menu-close type="button" class="close-button">
             <svg class="close-icon" width="8" height="8">
                 <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -108,7 +108,7 @@
         <section class="section main-color-mob">
             <div class="container">
                 <h1 class="main-name">Effective Solutions for Your Business</h1>
-                <button class="btn-main" type="button">Order Service</button>
+                <button data-modal-open class="btn-main" type="button">Order Service</button>
             </div>
         </section>
 
@@ -608,7 +608,7 @@
             </div>
             </div>
     </footer>
-    <div class="backdrop is-open">
+    <div data-modal-close class="backdrop is-open">
         <div class="modal">
             <button type="button" class="close-button">
                 <svg class="close-icon" width="8" height="8">
@@ -687,6 +687,7 @@
             </form>
         </div>     
     </div>
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
-
 </html>
