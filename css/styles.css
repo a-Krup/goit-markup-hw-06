@@ -1414,7 +1414,6 @@ p {
 .checkbox-label {
   display: inline-flex;
   align-items: center;
-  justify-content: flex-start;
   font-size: 12px;
   line-height: 1.17; 
   letter-spacing: 0.04em;
@@ -1430,6 +1429,10 @@ p {
 }
 
 .box-check {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  position: relative; 
   flex-shrink: 0;
   margin-right: 8px;
   width: 16px;
@@ -1438,8 +1441,22 @@ p {
   border: 1px solid rgba(46, 47, 66, 0.4);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: transparent;   
+  fill: transparent;
+  
+  
 }
+
+.check-icon {
+  width: 50%; 
+  height: auto; 
+  display: block; 
+  position: absolute; 
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+}
+
+
 
 .link-policy {
 line-height: 1.3px; 
@@ -1452,6 +1469,8 @@ color: #4d5ae5;
   border: none;
   background-color:#404bbf;
   fill:#f4f4fd;
+  
+  
 }
 
 
