@@ -35,6 +35,7 @@ img {
    
 } 
 
+
 @media screen and (min-width: 768px) {
    .container { 
     max-width: 768px;
@@ -118,7 +119,15 @@ button {
     color: #2e2f42;
 }
 
+address {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+    
+}
+
 .contakt {
+    
     font-weight: 400;
     color: #434455;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -429,18 +438,32 @@ display: flex;
 
 }
 }
+
 /*section main*/
 .main-color-mob {
    /*width: 320px;*/
+   padding-top: 72px; 
+   padding-bottom: 72px;
    margin: 0 auto; 
    background: rgba(46, 47, 66, 0.7);
    background-image: 
       linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/office.jpg);
+      url(../images/office-mob.jpg);
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat;    
 }
+
+ @media (min-resolution: 192dpi) {
+        .main-color-mob {
+            background-image: 
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/office-mob@2x.jpg); 
+        }
+    }
+
+
+
 
 .main-name{
     font-weight: 700;
@@ -450,8 +473,6 @@ display: flex;
     color: #fff;
     margin: 0;
     margin-bottom: 72px;
-    padding-top: 72px; 
-    padding-bottom: 72px;
     max-width: 216px;
     text-align: center;
     margin-left: auto;
@@ -491,31 +512,56 @@ display: flex;
 }
    
 
-@media screen and (min-width: 756px) {
+@media screen and (min-width: 768px) {
     .main-color-mob {
         /*width: 768px;*/
+        padding-top: 112px; 
+        padding-bottom: 112px;
         background-image: linear-gradient(
           rgba(46, 47, 66, 0.7),
           rgba(46, 47, 66, 0.7)
         ),
-        url(../images/office@2x.jpg);
+        url(../images/office-tab.jpg);
+}
+
+       @media (min-resolution: 192dpi) {
+        .main-color-mob {
+            background-image: 
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/office-tab@2x.jpg); 
+        }
+    
 }
      .main-name {
         font-size: 56px;
         line-height: 1.07;
         max-width: 496px;
-        padding-top: 112px; 
-        padding-bottom: 112px;
+        
      }
+  }
 
-}
+
 
 @media screen and (min-width: 1158px) {
     .main-color-mob {
      padding-top: 188px; 
      padding-bottom: 188px;
      /*width: 1440px;*/
-     
+       
+    background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/office-desk.jpg);
+}
+
+       @media (min-resolution: 192dpi) {
+        .main-color-mob {
+            background-image: 
+                linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url(../images/office-desk@2x.jpg); 
+        }
+    
 }
 }
 
@@ -531,9 +577,21 @@ display: flex;
     margin: 0;
     margin-bottom: 72px;
     text-align: center;
+}
+ .two-two  {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11; 
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin: 0;
+    margin-bottom: 8px;
+    text-align: center;
+
+ } 
    
     
-}
+
 
 .visually-hidden {
   position: absolute;
@@ -549,13 +607,17 @@ display: flex;
 }
 
 .name-two {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.1;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     text-align: center;
+    margin: 0;
     margin-bottom: 8px;
+    
+
 }
 
 p {
@@ -591,7 +653,7 @@ p {
 
 @media screen and (min-width: 756px) {
 
-    .name-two {
+    .two-two {
      text-align: left;
 }
 
@@ -610,11 +672,15 @@ p {
 
 
 @media screen and (min-width: 1158px) {
-    .name-two {
+
+    .two-two {
+      
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
+
     }
+    
 
     p {
       font-weight: 400;
@@ -695,6 +761,10 @@ p {
   
  
 @media screen and (min-width: 756px) {
+  
+     .team .container  {
+      width: 584px;
+     }
     .cards {
        flex-wrap: wrap;
        flex-direction: row;
@@ -711,14 +781,21 @@ p {
 
 
 @media screen and (min-width: 1158px) {
+
+  .team .container  {
+      width: 1128px;
+     }
      
   .cards {
        flex-wrap: nowrap;
 }
     .card-name {
-       width: calc((100% - 72px) / 4); 
+       width: calc((100% - 120px) / 4); 
     }
 
+    .list-social {
+      gap: 40px;
+    }
    
 }
 
@@ -858,7 +935,8 @@ p {
 
 .name-ftr {
     background-color: #2e2f42;
-    
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
  
  
@@ -866,8 +944,7 @@ p {
    display: flex;
    flex-direction: column;
    gap: 72px;
-   padding-top: 96px;
-   padding-bottom: 96px;
+   
    
    
 }
@@ -1040,13 +1117,15 @@ p {
      flex-direction: row;
      flex-wrap: wrap;
      gap: 24px;
+     justify-content: center;
+     width: 584px;
 
 }
      .logo-ftr {
       width: 264px;
-      margin-left: 108px;
-  
+      
 } 
+    
       
 
     .ftr-social {
@@ -1067,7 +1146,7 @@ p {
      .sbscrb {
       width: 453px;
       margin-top: 72px;
-      margin-left: 108px;
+      
       
      }
       .sbscrb-btn {
@@ -1105,6 +1184,8 @@ p {
       align-items: baseline;
       justify-content: flex-start;
       padding: 100px 0;
+      gap: unset;
+      width: 1128px;
 }
     .logo-ftr {
      margin-left: 0;
@@ -1349,6 +1430,7 @@ p {
 }
 
 .box-check {
+  flex-shrink: 0;
   margin-right: 8px;
   width: 16px;
   height:16px;
