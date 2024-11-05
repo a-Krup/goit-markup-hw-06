@@ -1184,19 +1184,20 @@ p {
      .ftr-logo {
       flex-wrap: nowrap;
       align-items: baseline;
-      justify-content: flex-start;
       gap: unset;
       width: 1128px;
 }
-    .logo-ftr {
-     margin-left: 0;
-  
-} 
     
+.logo-ftr {
+   margin-right: 120px;
+      
+} 
+ .ftr-text {
+  width: 264px;
+ } 
 
     .ftr-social {
-        margin-left: 120px;
-        margin-right: 80px;
+      margin-right: 80px;
         
     }
 
